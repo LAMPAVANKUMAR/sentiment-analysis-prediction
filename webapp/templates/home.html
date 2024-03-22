@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction of Sentiment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: hwb(0 33% 58%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            padding: 40px;
+            background-color: hsl(76, 77%, 27%);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 160px;
+            margin-bottom: 25px;
+        }
+        input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        input[type="submit"] {
+            width: 100px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            outline: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.freepik.com/free-photo/front-view-arrangement-with-different-feelings_23-2148860244.jpg?t=st=1711022090~exp=1711025690~hmac=883fe5505c6eb2f0b17730c3a4de9b3e0173bd0b903451d54146d20a943441da&w=826">
+        <h1>Prediction of sentiment</h1>
+        <form action="/prediction" method="post">
+            <input type="text" name="inputreview" placeholder="Enter your review">
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
